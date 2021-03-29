@@ -75,5 +75,5 @@
   "requireCapitalizedConstructors": true,
   "safeContextKeyword": "self",
   "requireDotNotation": true,
-  "excludeFiles": ["node_modules/**", "test/tmp/**"]
+  "excludeFiles": ["node_modules/**"]
 }

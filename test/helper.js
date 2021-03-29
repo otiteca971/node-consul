@@ -9,7 +9,7 @@ require('should');
 var nock = require('nock');
 var sinon = require('sinon');
 
-var consul = require('../lib');
+var Consul = require('../lib');
 
 /**
  * Setup tests
@@ -30,7 +30,7 @@ function setup(scope) {
       configurable: true,
       enumerable: true,
       get: function() {
-        return consul();
+        return new Consul();
       },
     });
 
@@ -54,5 +54,5 @@ function setup(scope) {
  * Module exports.
  */
 
-exports.consul = consul;
+exports.consul = Consul;
 exports.setup = setup;
